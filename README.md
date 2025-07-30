@@ -85,10 +85,3 @@ These sub-projects are designed to provide the underlying logic and algorithms t
 ## Research Context
 
 This project explores the problem of finding the **Largest Empty Circle** in environments with both static and dynamic obstacles, an important challenge in computational geometry with applications in robotics, path planning, and spatial analysis. The dynamic aspect—handling moving obstacles in real time—distinguishes this work and is the primary contribution of this research.
-
-## Acknowledgments
-
-This project builds upon classic computational geometry algorithms and leverages open-source libraries such as scipy, numpy, and matplotlib for efficient computation and visualization.
-
-**For more details on the algorithms and optimizations used, please refer to the in-code documentation and comments.**
-
