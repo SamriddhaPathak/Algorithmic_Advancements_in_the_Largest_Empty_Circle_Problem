@@ -19,9 +19,9 @@ Obstacles can follow user-defined paths, and their positions are updated in real
 - **Efficient LEC Computation:**
 Utilizes optimized geometric algorithms (including incremental and sampled Delaunay triangulation, candidate sampling, and pruning) to efficiently compute the largest empty circle that avoids all sites and moving obstacles.
 - **Visualization:**
-    - Voronoi diagram edges (blue)
-    - Convex hull of sites (green)
-    - Largest Empty Circle (orange)
+    - Voronoi diagram edges
+    - Convex hull of site
+    - Largest Empty Circle
     - Obstacles and their paths
 - **Statistics \& Controls:**
 Real-time display of the number of sites, obstacles, and simulation time, with controls for clearing, pausing, and resuming the simulation.
@@ -59,7 +59,7 @@ python dynamic_lec_voronoi.py
 ## Usage
 
 - **Add Sites:**
-Select "Add Sites" mode and click on the canvas to place Voronoi sites (red dots).
+Select "Add Sites" mode and click on the canvas to place Voronoi sites.
 - **Add Obstacles:**
 Switch to "Add Obstacles" mode, click to define the obstacle's path. Each obstacle can have a custom radius and speed.
 - **Animate:**
