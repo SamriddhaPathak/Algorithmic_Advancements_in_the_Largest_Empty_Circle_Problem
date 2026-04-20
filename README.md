@@ -54,7 +54,7 @@ $$F(t) = \{x \in B : \forall j,\ |x - O_j(t)| \geq r_j\}$$
 
 The optimal LEC center is:
 
-$$c^*(t) = \arg\max_{x \in F(t)}\ \min\{\text{dist}(x, S),\ \text{dist}(x, O(t)),\ \text{dist}(x, \partial B)\}$$
+$$c^{*}(t) = \arg\max_{x \in F(t)}\ \min\{\text{dist}(x, S),\ \text{dist}(x, O(t)),\ \text{dist}(x, \partial B)\}$$
 
 Where:
 - dist(x, S) = minᵢ |x − sᵢ| — distance to nearest site
@@ -63,7 +63,7 @@ Where:
 
 The resulting optimal radius is:
 
-$$R^*(t) = \min\{\text{dist}(c^*(t), S),\ \text{dist}(c^*(t), O(t)),\ \text{dist}(c^*(t), \partial B)\}$$
+$$R^{*}(t) = \min\{\text{dist}(c^{*}(t), S),\ \text{dist}(c^{*}(t), O(t)),\ \text{dist}(c^{*}(t), \partial B)\}$$
 
 ---
 
