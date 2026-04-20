@@ -50,11 +50,11 @@ The goal is to compute, at any time *t*, the **Largest Empty Circle (LEC)** that
 
 The feasible region at time *t* is defined as:
 
-$$F(t) = \{x \in B : \forall j,\ |x - O_j(t)| \geq r_j\}$$
+**F(t) = { x ∈ B : ∀j, |x − Oⱼ(t)| ≥ rⱼ }**
 
 The optimal LEC center is:
 
-$$c^{*}(t) = \arg\max_{x \in F(t)}\ \min\{\text{dist}(x, S),\ \text{dist}(x, O(t)),\ \text{dist}(x, \partial B)\}$$
+**c\*(t) = argmax over x∈F(t) of min{ dist(x, S), dist(x, O(t)), dist(x, ∂B) }**
 
 Where:
 - dist(x, S) = minᵢ |x − sᵢ| — distance to nearest site
@@ -63,7 +63,7 @@ Where:
 
 The resulting optimal radius is:
 
-$$R^{*}(t) = \min\{\text{dist}(c^{*}(t), S),\ \text{dist}(c^{*}(t), O(t)),\ \text{dist}(c^{*}(t), \partial B)\}$$
+**R\*(t) = min{ dist(c\*(t), S), dist(c\*(t), O(t)), dist(c\*(t), ∂B) }**
 
 ---
 
@@ -85,11 +85,11 @@ Duplicate candidates are removed via grid hashing (10⁻⁶ precision), and out-
 
 For each candidate point p = (x, y), the feasible radius is:
 
-$$r(p) = \min\left(d_{\text{bound}},\ \min_i |p - s_i|,\ \min_j (|p - O_j| - R_j)\right)$$
+**r(p) = min( d_bound, minᵢ |p − sᵢ|, minⱼ (|p − Oⱼ| − Rⱼ) )**
 
 Where boundary distance is computed in O(1) as:
 
-$$d_{\text{bound}} = \min\{x - x_{\min},\ x_{\max} - x,\ y - y_{\min},\ y_{\max} - y\}$$
+**d_bound = min{ x − x_min, x_max − x, y − y_min, y_max − y }**
 
 **Early termination** is applied when:
 - A partial site distance drops below a minimum threshold (~1.0 unit)
